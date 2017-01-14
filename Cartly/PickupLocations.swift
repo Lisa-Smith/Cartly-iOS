@@ -31,6 +31,8 @@ class PickupLocations {
     ]
     
     //may have to fix coordinates for Arbor Court to not conflict with arbor grill & freudian sip
+    //johnson auditorium may conflict with jacaranda
+    
     let arborCourt : [String : CLLocationCoordinate2D] = [
         "topLeft" : CLLocationCoordinate2DMake(34.241412, -118.530079),
         "topRight" : CLLocationCoordinate2DMake(34.241408, -118.529551),
@@ -43,6 +45,20 @@ class PickupLocations {
         "topRight" : CLLocationCoordinate2DMake(34.241728, -118.525345),
         "bottomRight" : CLLocationCoordinate2DMake(34.241521, -118.525347),
         "bottomLeft" : CLLocationCoordinate2DMake(34.241514, -118.525491)
+    ]
+    
+    let b5parkingStructure : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.2419081206163 , -118.53329658508301),
+        "topRight" : CLLocationCoordinate2DMake(34.2419081206163 , -118.53190183639526),
+        "bottomRight" : CLLocationCoordinate2DMake(34.24122518955382, -118.53190183639526),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.24122518955382, -118.53329658508301)
+    ]
+    
+    let b3parkingStructure : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.238886, -118.533697),
+        "topRight" : CLLocationCoordinate2DMake(34.238917, -118.531892),
+        "bottomRight" : CLLocationCoordinate2DMake(34.237433, -118.531855),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.237423, -118.533653)
     ]
     
     let bayramianHall : [String : CLLocationCoordinate2D] = [
@@ -114,7 +130,13 @@ class PickupLocations {
         "bottomRight" : CLLocationCoordinate2DMake(34.236493, -118.525869),
         "bottomLeft" : CLLocationCoordinate2DMake(34.236499, -118.526249)
     ]
-    
+
+    let education : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.241528, -118.531412),
+        "topRight" : CLLocationCoordinate2DMake(34.241520, -118.530675),
+        "bottomRight" : CLLocationCoordinate2DMake(34.241095, -118.530409),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.241113, -118.531409)
+    ]
     
     let eucalyptusHall : [String : CLLocationCoordinate2D] = [
         "topLeft" : CLLocationCoordinate2DMake(34.238735, -118.528810),
@@ -123,6 +145,26 @@ class PickupLocations {
         "bottomLeft" : CLLocationCoordinate2DMake(34.238545, -118.528765)
     ]
 
+    let extendedUniversityCommons : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.240723, -118.533549),
+        "topRight" : CLLocationCoordinate2DMake(34.240767, -118.532436),
+        "bottomRight" : CLLocationCoordinate2DMake(34.240413, -118.532443),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.240372, -118.533549)
+    ]
+    
+    let g3parkingStructure : [String: CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.238933, -118.525656),
+        "topRight" : CLLocationCoordinate2DMake(34.238961, -118.524635),
+        "bottomRight" : CLLocationCoordinate2DMake(34.237362, -118.524630),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.237389, -118.525652)
+    ]
+    
+    let grandSalon: [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.239492, -118.526824),
+        "topRight" : CLLocationCoordinate2DMake(34.239491, -118.526658),
+        "bottomRight" : CLLocationCoordinate2DMake(34.239212, -118.526665),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.239214, -118.526835)
+    ]
     
     let jacarandaHall : [String : CLLocationCoordinate2D] = [
         "topLeft" : CLLocationCoordinate2DMake(34.24205889685744, -118.52944493293762),
@@ -131,11 +173,25 @@ class PickupLocations {
         "bottomLeft" : CLLocationCoordinate2DMake(34.241021196083864, -118.52944493293762)
     ]
     
+    let jeanneChisholmHall : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.237769, -118.526298),
+        "topRight" : CLLocationCoordinate2DMake(34.237751, -118.525871),
+        "bottomRight" : CLLocationCoordinate2DMake(34.237395, -118.525867),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.237385, -118.526309)
+    ]
+    
     let jeromerichfieldHall : [String : CLLocationCoordinate2D] = [
         "topLeft" : CLLocationCoordinate2DMake(34.239085, -118.530943),
         "topRight" : CLLocationCoordinate2DMake(34.239071, -118.530113),
         "bottomRight" : CLLocationCoordinate2DMake(34.238703, -118.530125),
         "bottomLeft" : CLLocationCoordinate2DMake(34.238693, -118.530939)
+    ]
+    
+    let johnsonAuditorium : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.241520, -118.528986),
+        "topRight" : CLLocationCoordinate2DMake(34.241519, -118.528898),
+        "bottomRight" : CLLocationCoordinate2DMake(34.241278, -118.528810),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.241280, -118.529076)
     ]
     
     let juniperHall : [String : CLLocationCoordinate2D] = [
@@ -152,18 +208,81 @@ class PickupLocations {
         "bottomLeft" : CLLocationCoordinate2DMake(34.238125, -118.526620)
     ]
     
-    let b5parkingStructure : [String : CLLocationCoordinate2D] = [
-        "topLeft" : CLLocationCoordinate2DMake(34.2419081206163 , -118.53329658508301),
-        "topRight" : CLLocationCoordinate2DMake(34.2419081206163 , -118.53190183639526),
-        "bottomRight" : CLLocationCoordinate2DMake(34.24122518955382, -118.53190183639526),
-        "bottomLeft" : CLLocationCoordinate2DMake(34.24122518955382, -118.53329658508301)
+    let laurelHall : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.242421, -118.529096),
+        "topRight" : CLLocationCoordinate2DMake(34.242421, -118.528846),
+        "bottomRight" : CLLocationCoordinate2DMake(34.242276, -118.528842),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.242277, -118.529094)
     ]
     
-    let b3parkingStructure : [String : CLLocationCoordinate2D] = [
-        "topLeft" : CLLocationCoordinate2DMake(34.238886, -118.533697),
-        "topRight" : CLLocationCoordinate2DMake(34.238917, -118.531892),
-        "bottomRight" : CLLocationCoordinate2DMake(34.237433, -118.531855),
-        "bottomLeft" : CLLocationCoordinate2DMake(34.237423, -118.533653)
+    let liveoakHall : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.238359, -118.528787),
+        "topRight" : CLLocationCoordinate2DMake(34.238359, -118.527623),
+        "bottomRight" : CLLocationCoordinate2DMake(34.238155, -118.527614),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.238159, -118.528778)
+    ]
+    
+    let magnoliaHall : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.239642, -118.528418),
+        "topRight" : CLLocationCoordinate2DMake(34.239645, -118.528159),
+        "bottomRight" : CLLocationCoordinate2DMake(34.239202, -118.528149),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.239207, -118.528411)
+    ]
+    
+    let manzanitaHall : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.237871, -118.530714),
+        "topRight" : CLLocationCoordinate2DMake(34.237848, -118.529486),
+        "bottomRight" : CLLocationCoordinate2DMake(34.236856, -118.529432),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.236855, -118.530640)
+    ]
+    
+    let MatadorBookstore : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.237767, -118.528656),
+        "topRight" : CLLocationCoordinate2DMake(34.237754, -118.527664),
+        "bottomRight" : CLLocationCoordinate2DMake(34.237013, -118.527651),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.237022, -118.528694)
+    ]
+    
+    let matadorHall: [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.243769, -118.528073),
+        "topRight" : CLLocationCoordinate2DMake(34.243766, -118.527818),
+        "bottomRight" : CLLocationCoordinate2DMake(34.243447, -118.527820),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.243447, -118.528076)
+    ]
+    
+    let montereyHall : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.236790, -118.524549),
+        "topRight" : CLLocationCoordinate2DMake(34.236741, -118.523503),
+        "bottomRight" : CLLocationCoordinate2DMake(34.236502, -118.523512),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.236541, -118.524513)
+    ]
+
+    let nautilusCenter : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.244129, -118.527858),
+        "topRight" : CLLocationCoordinate2DMake(34.244127, -118.527782),
+        "bottomRight" : CLLocationCoordinate2DMake(34.243834, -118.527778),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.243834, -118.527857)
+    ]
+    
+    let nordhoffHall : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.236680, -118.530916),
+        "topRight" : CLLocationCoordinate2DMake(34.236683, -118.530304),
+        "bottomRight" : CLLocationCoordinate2DMake(34.235975, -118.530272),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.236019, -118.530865)
+    ]
+    
+    let noskiAuditorium : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.242366, -118.531314),
+        "topRight" : CLLocationCoordinate2DMake(34.242269, -118.531123),
+        "bottomRight" : CLLocationCoordinate2DMake(34.242125, -118.531239),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.242216, -118.531414)
+    ]
+    
+    let oviattLibrary : [String : CLLocationCoordinate2D] = [
+        "topLeft" : CLLocationCoordinate2DMake(34.24038260463415, -118.53000283241272),
+        "topRight" : CLLocationCoordinate2DMake(34.24038260463415, -118.52861881256104),
+        "bottomRight" : CLLocationCoordinate2DMake(34.23967305289722, -118.52861881256104),
+        "bottomLeft" : CLLocationCoordinate2DMake(34.23967305289722, -118.53000283241272)
     ]
     
     let redwoodHall : [String : CLLocationCoordinate2D] = [
@@ -192,41 +311,6 @@ class PickupLocations {
         "topRight" : CLLocationCoordinate2DMake(34.2405954689889, -118.52465987205505),
         "bottomRight" : CLLocationCoordinate2DMake(34.2393448831962, -118.52465987205505),
         "bottomLeft" : CLLocationCoordinate2DMake(34.2393448831962, -118.52519631385803)
-    ]
-    
-    let oviattLibrary : [String : CLLocationCoordinate2D] = [
-        "topLeft" : CLLocationCoordinate2DMake(34.24038260463415, -118.53000283241272),
-        "topRight" : CLLocationCoordinate2DMake(34.24038260463415, -118.52861881256104),
-        "bottomRight" : CLLocationCoordinate2DMake(34.23967305289722, -118.52861881256104),
-        "bottomLeft" : CLLocationCoordinate2DMake(34.23967305289722, -118.53000283241272)
-    ]
-    
-    let bookStore : [String : CLLocationCoordinate2D] = [
-        "topLeft" : CLLocationCoordinate2DMake(34.237767, -118.528656),
-        "topRight" : CLLocationCoordinate2DMake(34.237754, -118.527664),
-        "bottomRight" : CLLocationCoordinate2DMake(34.237013, -118.527651),
-        "bottomLeft" : CLLocationCoordinate2DMake(34.237022, -118.528694)
-    ]
-    
-    let liveoakHall : [String : CLLocationCoordinate2D] = [
-        "topLeft" : CLLocationCoordinate2DMake(34.238359, -118.528787),
-        "topRight" : CLLocationCoordinate2DMake(34.238359, -118.527623),
-        "bottomRight" : CLLocationCoordinate2DMake(34.238155, -118.527614),
-        "bottomLeft" : CLLocationCoordinate2DMake(34.238159, -118.528778)
-    ]
-    
-    let manzanitaHall : [String : CLLocationCoordinate2D] = [
-        "topLeft" : CLLocationCoordinate2DMake(34.237871, -118.530714),
-        "topRight" : CLLocationCoordinate2DMake(34.237848, -118.529486),
-        "bottomRight" : CLLocationCoordinate2DMake(34.236856, -118.529432),
-        "bottomLeft" : CLLocationCoordinate2DMake(34.236855, -118.530640)
-    ]
-    
-    let g3parkingStructure : [String: CLLocationCoordinate2D] = [
-        "topLeft" : CLLocationCoordinate2DMake(34.238933, -118.525656),
-        "topRight" : CLLocationCoordinate2DMake(34.238961, -118.524635),
-        "bottomRight" : CLLocationCoordinate2DMake(34.237362, -118.524630),
-        "bottomLeft" : CLLocationCoordinate2DMake(34.237389, -118.525652)
     ]
     
     let universityHall : [String: CLLocationCoordinate2D] = [
@@ -263,17 +347,22 @@ class PickupLocations {
         locations["Chicano House"] = chicanoHouse
         locations["Childrens Center"] = childrensCenter
         locations["Citrus Hall"] = citrusHall
+        locations["Cypress Hall"] = cypressHall
         locations["Donald Bianchi Planetarium"] = donaldBianchiPlanetarium
         locations["Duck Pond"] = duckPond
-        locations["Cypress Hall"] = cypressHall
+        locations["Education"] = education
         locations["Eucalyptus Hall"] = eucalyptusHall
+        locations["Extended University Commons"] = extendedUniversityCommons
+        locations["Grand Salon(USU)"] = grandSalon
         locations["G3 Parking Structure"] = g3parkingStructure
         locations["Jacaranda Hall"] = jacarandaHall
+        locations["Jeanne Chisholm Hall"] = jeanneChisholmHall
         locations["Jerome Richfield Hall"] = jeromerichfieldHall
+        locations["Johnson Auditorium"] = johnsonAuditorium
         locations["Juniper Hall"] = juniperHall
         locations["Klotz Student Health Center"] = klotzStudentHealthCenter
         locations["Live Oak Hall"] = liveoakHall
-        locations["Matador Book Store"] = bookStore
+        locations["Matador Book Store"] = matadorBookstore
         locations["Manzanita Hall"] = manzanitaHall
         locations["Oviatt Library"] = oviattLibrary
         locations["Redwood Hall/Matadome"] = redwoodHall

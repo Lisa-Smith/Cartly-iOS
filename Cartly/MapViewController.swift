@@ -116,7 +116,7 @@ class MapViewController: UIViewController , MKMapViewDelegate , CLLocationManage
     var riderLocation :CLLocationCoordinate2D?
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        <#code#>
+    //    <#code#>
     }
    
     @IBAction func doubleTap(_ sender: UITapGestureRecognizer) {
